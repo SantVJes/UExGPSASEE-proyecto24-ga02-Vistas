@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify
 
 import requests
-
+EROR = "error: No data provided" 
 db = SQLAlchemy()
 
 def import_db_controller(database):
@@ -27,7 +27,7 @@ def add_vista():  # noqa: E501
     # Obtener los datos de la solicitud JSON
         data = connexion.request.get_json()
         if not data:
-            return {"error": "No data provided"}, 400  # Código 400: No se proporcionaron datos
+            return EROR, 400  # Código 400: No se proporcionaron datos
     
     # Verificar que todos los campos requeridos están presentes
         required_fields = ['nombre', 'contenidos_ids']
@@ -227,7 +227,7 @@ def update_vista_by_nombre(nombre_vista):  # noqa: E501
         # Obtener los datos de la solicitud JSON
         data = connexion.request.get_json()
         if not data:
-            return {"error": "No data provided"}, 400  # Código 400: No se proporcionaron datos
+            return EROR, 400  # Código 400: No se proporcionaron datos
 
         vista = db.session.query(Vistas).filter_by(nombre_vista=nombre_vista).first()
 
@@ -260,7 +260,7 @@ def updatevista(id_vista):  # noqa: E501
         # Obtener los datos de la solicitud JSON
         data = connexion.request.get_json()
         if not data:
-            return {"error": "No data provided"}, 400  # Código 400: No se proporcionaron datos
+            return EROR, 400  # Código 400: No se proporcionaron datos
 
         vista = db.session.query(Vistas).get(id_vista)
 
