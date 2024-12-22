@@ -45,9 +45,9 @@ El **Microservicio de Vistas** es una solución diseñada para gestionar eficien
    Utilizando el comportamiento de visualización de los usuarios, el microservicio de vistas trabaja en conjunto con el microservicio de recomendaciones para sugerir contenidos que coincidan con los intereses específicos de los usuarios, mejorando su experiencia dentro de la plataforma.
 
 ---
-## 📃 Más Información sobre el Método de Desarrollo
+## 📃 Más Información sobre el Método de Desarrollo sobre La Refactorizacion
 
-[Infome de la Tercera Entrega](https://github.com/UExGPSASEE/proyecto24-ga02/wiki/🗃%EF%B8%8FInforme-de--Tercera-entrega)
+[Infome de la Cuarta Entrega sonar cloud](https://github.com/UExGPSASEE/proyecto24-ga02/wiki/📡-Entrega-Trabajo-4:-SonarCloud)
 
 ## Requisitos  
 Python 3.5.2 o superior  
